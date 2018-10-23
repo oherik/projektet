@@ -33,10 +33,10 @@ import TUIO.*;
 
 public class TuioDemo  {
 
-	private final int window_width  = 1500;
-	private final int window_height = 1000;
+	private final int window_width  = 1440;
+	private final int window_height = 900;
 
-	private boolean fullscreen = false;
+	private boolean fullscreen = true;
 	
 	private TuioDemoComponent demo;
 	private JFrame frame;

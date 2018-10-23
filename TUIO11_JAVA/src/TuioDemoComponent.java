@@ -186,7 +186,7 @@ public class TuioDemoComponent extends JComponent implements TuioListener {
 
 
 
-		List<Integer> activeSensorIds = new ArrayList<>();
+		List<TuioDemoObject> activeSensors = new ArrayList<>();
 
 		// draw the objects
 		Enumeration<TuioDemoObject> objects = objectList.elements();
@@ -194,9 +194,10 @@ public class TuioDemoComponent extends JComponent implements TuioListener {
 				new PriorityQueue<TuioDemoObject>(5,(a,b) -> Float.compare(a.getX(),  b.getX()));
 		while (objects.hasMoreElements()) {
 			TuioDemoObject tobj = objects.nextElement();
+
 			if (tobj!=null) {
 				tobj.paint(g2, width, height);
-				activeSensorIds.add(tobj.getSymbolID());
+				activeSensors.add(tobj);
 				pq.add(tobj);
 			}
 		}
@@ -206,7 +207,7 @@ public class TuioDemoComponent extends JComponent implements TuioListener {
 		}
 		//System.out.println(sb.toString());
 
-		imageHandler.update(activeSensorIds, g);
+		imageHandler.update(activeSensors, g);
 
 	}
 }
