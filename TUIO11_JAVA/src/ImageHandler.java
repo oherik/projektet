@@ -171,17 +171,22 @@ public class ImageHandler {
 
 
             storySolutionMap.put(0, 0);
-            storySolutionMap.put(1, 3);
-            storySolutionMap.put(2, 6);
-            storySolutionMap.put(3, 9);
+            storySolutionMap.put(1, 9);
+            storySolutionMap.put(2, 4);
+            storySolutionMap.put(3, 7);
+            storySolutionMap.put(4, 1);
 
 
 
-
+            sensorImageMap.put(8, ImageIO.read(new File("./img/Sensors (Overlays)/Compass.png")));
+            sensorImageMap.put(5, ImageIO.read(new File("./img/Sensors (Overlays)/Light.png")));
+            sensorImageMap.put(9, ImageIO.read(new File("./img/Sensors (Overlays)/Camera.png")));
             sensorImageMap.put(0, ImageIO.read(new File("./img/Sensors (Overlays)/Antenna.png")));
-            sensorImageMap.put(3, ImageIO.read(new File("./img/Sensors (Overlays)/Camera.png")));
-            sensorImageMap.put(6, ImageIO.read(new File("./img/Sensors (Overlays)/Compass.png")));
-            sensorImageMap.put(9, ImageIO.read(new File("./img/Sensors (Overlays)/GPS.png")));
+            sensorImageMap.put(3, ImageIO.read(new File("./img/Sensors (Overlays)/Proximity.png")));
+            sensorImageMap.put(4, ImageIO.read(new File("./img/Sensors (Overlays)/Microphone.png")));
+            sensorImageMap.put(1, ImageIO.read(new File("./img/Sensors (Overlays)/Temperature.png")));
+            sensorImageMap.put(7, ImageIO.read(new File("./img/Sensors (Overlays)/GPS.png")));
+            sensorImageMap.put(6, ImageIO.read(new File("./img/Sensors (Overlays)/Gyroscope.png")));
 
 
 
