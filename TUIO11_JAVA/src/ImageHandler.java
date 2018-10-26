@@ -174,7 +174,7 @@ public class ImageHandler {
             storySolutionMap.put(1, 9);
             storySolutionMap.put(2, 4);
             storySolutionMap.put(3, 7);
-            storySolutionMap.put(4, 1);
+            storySolutionMap.put(4, 8);
 
 
 
