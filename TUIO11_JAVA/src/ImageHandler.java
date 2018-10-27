@@ -30,7 +30,7 @@ public class ImageHandler {
     private boolean pauseLedSending = false;
 
     private long lastCorrectTime;
-    private int pauseTime = 5000;
+    private int pauseTime = 7000;
 
     private long winTime;
     private int winPauseTime = 10000;
